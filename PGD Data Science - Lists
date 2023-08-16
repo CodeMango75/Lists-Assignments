@@ -1,0 +1,81 @@
+# List Assignment
+# Q1.
+Fruits = ["apple", "banana", "orange", "grape", "kiwi"]
+
+Fruits.append("Pear")
+print(Fruits)
+
+# Insert Mango at Second Position of the List
+Fruits.insert(1 , "Mango")
+print((Fruits))
+
+# Remove Orange from the List
+Fruits.remove("orange")
+print(Fruits)
+
+# Q2
+Numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Print element at Index 3
+print(Numbers[2]) # output 2
+
+# Print sub list from 2 - 6 inclusive
+print(Numbers[2:7])
+
+# Print last three elements
+print(Numbers[-3:])
+
+# Q3 List Comprehension
+
+Squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# ACreate a new list named `even_squares` using a list comprehension that contains the squares of even numbers from the
+# `squares` list.
+
+square_lists = [i * i for i in Squares if i % 2 ==0]
+print(square_lists)
+
+# Q4 List Manipulation
+colors = ["red", "green", "blue", "yellow", "purple"]
+
+# Swap the first and last elements of the list.
+colors[0] = "purple"
+colors[4] = "red"
+print(colors)
+
+# Reverse the order of the list.
+colors.reverse()
+print(colors)
+
+#  Remove the second and third elements from the list
+colors.remove("yellow")
+colors.remove("blue")
+print(colors)
+
+# Q5. Advanced Slicing
+
+letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+print(letters)
+
+# Using slicing, create a new list `first_half` containing the first half of the `letters` list.
+first_half = letters[:5]
+print(first_half)
+
+# Using slicing, create a new list `last_three` containing the last three elements of the `letters` list.
+last_three = letters[-3:]
+print(last_three)
+
+# Q6 Nested Lists
+
+Matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# Print the element in the second row and third column.
+x= Matrix[1][2]
+print(x)
+
+# Use nested indexing to change the value at the second row and first column to 0.
+Matrix[1][0] = 0
+print(Matrix)
